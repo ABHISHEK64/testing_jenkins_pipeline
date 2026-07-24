@@ -10,7 +10,7 @@ pipeline {
             steps {
                 withCredentials([file(credentialsId: 'snowflake-private-key', variable: 'SF_KEY_PATH')]) {
                     bat """
-                        snowsql -a MK58698 ^
+                        "C:\\Program Files\\Snowflake SnowSQL\\snowsql.exe" -a MK58698 ^
                                 -u jenkins_svc ^
                                 --private-key-path %SF_KEY_PATH% ^
                                 -r JENKINS_ROLE ^
