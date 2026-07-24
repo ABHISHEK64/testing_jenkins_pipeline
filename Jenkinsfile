@@ -16,7 +16,7 @@ pipeline {
                                 -r JENKINS_ROLE ^
                                 -w COMPUTE_WH ^
                                 -d DEV_EDC_CON_DB ^
-                                -s YOUR_SCHEMA_NAME ^
+                                -s SALESFORCE ^
                                 -f scripts\\deploy.sql
                     """
                 }
